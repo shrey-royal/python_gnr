@@ -30,9 +30,6 @@ Syntax-:
 
 '''
 
-from distutils import file_util
-from tkinter.tix import DisplayStyle
-
 
 for i in range(1, 10):
     print(i)    # 0 to 9
