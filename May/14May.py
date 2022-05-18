@@ -71,14 +71,14 @@ print(f'{sum} is the answer')
 
 # WAP to find the no. of digits in the given number
 
-num = int(input('Enter any number: '))
-num1 = num
-digit_counter = 0
-while num > 0:
-    num //= 10
-    # print(num)
-    digit_counter+=1
-print(f'{num1} have {digit_counter} digits')
+# num = int(input('Enter any number: '))
+# num1 = num
+# digit_counter = 0
+# while num > 0:
+#     num //= 10
+#     # print(num)
+#     digit_counter+=1
+# print(f'{num1} have {digit_counter} digits')
 
 
 
@@ -173,3 +173,42 @@ ABCDE
 //9, 12, 13
 
 '''
+"""
+# 9. 
+# 12345
+#  1234
+#   123
+#    12
+#     1
+
+num = int(input('Enter any number: '))
+
+for i in range(1, num+1):
+    k=1
+    for j in range(1, num+2):
+        if j<=i:
+            print(' ', end="")
+        else:
+            print(k, end="")
+            k+=1
+    print()
+
+"""
+'''
+# 12. 
+# 1234321
+# 12   21
+# 1     1
+# 12   21
+# 1234321
+
+
+'''
+
+# 13. 
+#   1
+#  121
+# 12321
+
+
+
