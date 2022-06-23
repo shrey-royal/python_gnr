@@ -1,11 +1,14 @@
 # 4. Python program to create a list of tuples from given list having number and its cube in each tuple
 
-numbers = [(1, 1), (2, 8), (3, 27), (4, 64), (5, 125)]
-myList = []
+myList = [6, 2, 5 ,1, 4]
 
-for j in range(len(numbers)):
-    for i in numbers[j]:
-        myList.append(i)
+# Creating list of tuples 
+tupleList = [(val, (val*val*val)) for val in myList] 
+'''
+for val in myList:
+    myTuple = (val, (val*val*val))
+    tupleList.append(myTuple)
+'''
 
-myList.sort()
-print(myList)
+# print the result
+print("The list of Tuples is " , tupleList)
