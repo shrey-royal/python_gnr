@@ -1,0 +1,4 @@
+1.  Create a user-defined 3x3 matrix
+2.  Create a user-defined matrix with user-defined size
+3.  Input a user-defined matrix & make its transpose
+4.  Find co-factors of each element of a given 3x3 matrix.
