@@ -46,8 +46,21 @@ random_list = [
     [0, 0, 0], 
 ]
 
-for i in range(len(a)):
-    for j in range(len(b[i])):
-        random_list[i][j] = a[i][j] + b[i][j]
+temp_list = []
 
-print(random_list)
+n = 3
+m = 2
+
+temp_list = [0] * n
+
+for i in range(n):
+    temp_list[i] = [0] * m
+
+print(temp_list)
+
+
+# for i in range(len(a)):
+#     for j in range(len(b[i])):
+#         random_list[i][j] = a[i][j] + b[i][j]
+
+# print(random_list)
