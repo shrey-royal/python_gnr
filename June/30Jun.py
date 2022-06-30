@@ -1,6 +1,8 @@
 # Recursion -: It is a method to call same function.
 # The process in which a function calls itself directly or indirectly is called recursion
 
+# 1. Make a python program to find fibonacci series using functions and take input from the user of how many numbers will be printed in the series.
+
 def fibonacci(n):
     if n <= 1:
         return 1
