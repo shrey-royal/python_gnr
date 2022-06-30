@@ -1,0 +1,5 @@
+1. Make a Python program to print average of 5 input integers using a function that find average of 5 numbers given in the argument.
+
+2. Make a Python program to find factorial of a given integer using a function.
+
+3. Make a Python program that takes 5 integers from user, finds their factorials by passing them one by one in a function that finds factorial of an integer given in its argument, and lastly, finds average of their factorials by passing all the factorials into a function that finds average of 5 numbers. Print only the final answer.
