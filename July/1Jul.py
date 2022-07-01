@@ -21,6 +21,9 @@ print(lfun(2))
 def printing(): print("this is a Lambda Function")
 printing()
 
+x = lambda n:  (n ** 10)
+print(x(2))
+
 
 '''
 SUMMARY : 
@@ -47,7 +50,9 @@ list2 = list1.copy() -> deep copy
 
 # in python it is called Lambda Function
 
-syntax-: 
 def function_name(arguments): return data / one expression
+
+syntax-: 
+lambda arguments: expression
 
 '''
