@@ -49,7 +49,7 @@ random_list = [
 temp_list = []
 
 n = 3
-m = 2
+m = 2 
 
 temp_list = [0] * n
 
