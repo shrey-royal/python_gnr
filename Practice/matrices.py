@@ -19,8 +19,6 @@ print(list2)
 
 '''
 
-from numpy import mat
-
 
 row = int(input("Enter rows: "))
 cols = int(input("Enter cols: "))
@@ -36,3 +34,16 @@ for i in range(0, len(matrix)):
     for j in range(0, len(matrix[i])):
         print(matrix[i][j], end="\t")
     print("\n")
+
+# scanning of matrix
+for i in range(0, len(matrix)):
+    for j in range(0, len(matrix[i])):
+        matrix[i][j] = int(input(f"Enter matrix[{i}][{j}] = "))
+    print("\n")
+
+for i in range(0, len(matrix)):
+    for j in range(0, len(matrix[i])):
+        print(matrix[i][j], end="\t")
+    print("\n")
+
+# if (choice == '+')
