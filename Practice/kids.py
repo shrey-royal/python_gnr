@@ -1,6 +1,6 @@
 userinfo = {"uname":"password", "admin":"admin"}
 # print(userinfo.keys(), "\n", userinfo.values())
-balance = 25000
+# balance = 25000
 
 def new_user(username, password):
     userinfo.update({username:password})
@@ -15,11 +15,39 @@ def login(uname, password):
             else:
                 return 0
 
+def deposit(balance):
+    dep_amount = int(input("Enter the amount that you want to deposit: "))
+    if dep_amount >= 20000:
+        print("naa thaay")
+    else:
+        balance += dep_amount
+        print("Your current balance is ", balance)
+    
+    return balance
+
+def withdraw(balance):
+    print("Your current balance is ", balance)
+    withdraw_amount = int(input("Enter the amount that you want to Withdraw: "))
+    if withdraw_amount >= 20000:
+        print("Alya naa thaay")
+    else:
+        if balance - withdraw_amount <= 25000:
+            print("not possible")
+        else:
+            balance -= withdraw_amount
+            print("Your current balance is ", balance)
+
+    return balance
+    
+def check_balance(balance):
+    print("Your current balance is ", balance)
+    return balance
 
 print("\n")
 print("Welcome To Royal Kids Bank".center(100, '*'))
 
 while(True):
+    balance = 25000
     print("\n1. Open A New Account")
     print("2. Login")
     print("3. Exit")
@@ -45,16 +73,18 @@ while(True):
                 inner_choice = int(input("Enter your choice: "))
 
                 if inner_choice == 1:
-                    print("1. Deposit")
+                    print("Deposit Money...")
+                    balance = deposit(balance)
                     
                 elif inner_choice == 2:
-                    print("2. Withdraw")
+                    print("Withdraw amount...")
+                    balance = withdraw(balance)
                     
                 elif inner_choice == 3:
-                    print("3. View Account Balance")
+                    print("View Account Balance")
+                    check_balance(balance)
                     
                 elif inner_choice == 4:
-                    print("4. Logout")
                     print("Logging Out...")
                     break
                 else:
