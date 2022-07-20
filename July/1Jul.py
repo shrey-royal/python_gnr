@@ -24,6 +24,8 @@ printing()
 x = lambda n:  (n ** 10)
 print(x(2))
 
+y = lambda a, b: print("this is a lambda function using the lambda keyword")
+y(1, 2)
 
 '''
 SUMMARY : 
