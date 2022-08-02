@@ -7,10 +7,16 @@ class Employee():
 
 
     def print_employee_details(self):
-        print("\nId -> ", self.id)
-        print("\nName -> ", self.name)
-        print("\nSalary -> ", self.salary)
-        print("\nJob Role -> ", self.job_role)
+        print("Id -> ", self.id)
+        print("Name -> ", self.name)
+        print("Salary -> ", self.salary)
+        print("Job Role -> ", self.job_role)
+
+    def setAge(self, age):
+        self.age = age
+
+    def getAge(self):
+        return self.age
 
 
 e = Employee(int(input("Enter Id: ")), input("Enter Name: "), float(input("Enter Salary: ")), input("Enter Job Role: "))
@@ -19,11 +25,21 @@ e.print_employee_details()
 
 
 
-print(getattr(e, "name"))
+# print(getattr(e, "name"))
 
-setattr(e, "salary", 1000000000)
+# setattr(e, "salary", 1000000000)
 
-e.print_employee_details()
+# e.print_employee_details()
+
+# delattr(e, "salary")
+
+# print(hasattr(e, "salary")
+
+# e.print_employee_details()
+
+
+e.setAge(int(input("Enter Age: ")))
+print(e.getAge())
 
 
 '''
